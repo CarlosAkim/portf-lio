@@ -1,0 +1,162 @@
+/*Padronizando todo o conteudo como box-sizing*/
+* {
+  box-sizing: border-box;
+}
+
+/*Personalização da imagem code que está logo atrás do conteudo*/
+#code {
+  position: absolute;
+  right: 0;
+  opacity: 20%;
+  width: 80%;
+  height: 98%;
+  box-sizing: border-box;
+}
+
+/*Personalização da classe .container que ira receber o aside e section*/
+.container {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  width: 100%;
+  height: 73%;
+}
+
+/*Personalização do body com seu background*/
+html,
+body {
+  background: black;
+  height: 98vh;
+}
+
+/*Personalização da area que deixa a img redonda*/
+.imagem-quadrada {
+  z-index: 2;
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-left: 60px;
+  margin-top: 60px;
+
+
+}
+
+/*Personalização da img dentro da area redonda*/
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/*Personalização da area que vai estar a img e ul*/
+nav {
+  display: flex;
+  align-items: center;
+  margin-left: 180px;
+  width: auto;
+  height: 250px;
+}
+
+/*Personalização da area do ul*/
+.links {
+  position: absolute;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  z-index: 1;
+  list-style-type: none;
+  display: flex;
+  background: #BBED2F;
+  justify-content: space-around;
+  align-items: center;
+  width: 560px;
+  height: 60px;
+  padding: 25px;
+  border-radius: 15px;
+
+}
+
+/*Personalização da area de li*/
+.links li {
+  float: left;
+}
+
+/*Personalização dos links dentro de ul*/
+.links li a {
+  color: black;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 10px;
+  text-decoration: none;
+  font-size: 24px;
+
+}
+
+/*Personalização do aside*/
+aside {
+  background: #E4E4E4;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  width: 20%;
+  height: 100%;
+  border-radius: 10px 0 0 0;
+}
+
+/*Personalização da tag h2 de aside*/
+aside h2 {
+  margin-left: 15px;
+}
+
+/*Personalização do section*/
+section {
+  flex: 1;
+  display: grid;
+  grid-template-rows: auto;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background: white;
+  width: 100%;
+  height: 100%;
+}
+
+/*Personalização do id educação*/
+#educacao {
+  grid-row: 1;
+  margin-left: 15px;
+  height: 120px;
+  width: 50%;
+
+}
+
+/*Personalização da tag h2 dentro do id educação*/
+#educacao h2 {
+  margin-bottom: 0;
+}
+
+/*Personalização da lista dentro do id educação*/
+#educacao ul {
+  margin: 0;
+}
+
+/*Personalização do id experiencia-profissional */
+#experiencia-profissional {
+  width: 80%;
+  grid-row: 2;
+  margin-left: 15px;
+  height: 150px;
+}
+
+/*Personalização da tag h2, h3 e p dentro do id experiencia-profissional*/
+#experiencia-profissional h2,
+h3,
+p {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+/*Personalização da lista dentro do id experiencia-profissional*/
+#experiencia-profissional ul {
+  margin: 0;
+}

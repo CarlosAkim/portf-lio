@@ -1,0 +1,118 @@
+/*Deixando tudo como box-sizing*/
+* {
+  box-sizing: border-box;
+}
+
+/*Personalização de background do body*/
+body {
+  background: black;
+}
+
+/*Personalização da area do nav*/
+nav {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 900px;
+  width: 300px;
+}
+
+/*Personalização para deixar a imagem redonda*/
+.Imagem-perfil {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-top: 50px;
+  margin-left: 30px;
+  justify-content: space-between;
+}
+
+/*Personalização da imagem do perfil dentro da forma redonda*/
+.Imagem-perfil img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/*Personalização do section, com bordas e tipo de fonte*/
+section {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin-left: 300px;
+  left: 0;
+  height: 800px;
+  margin-top: 50px;
+  background: white;
+  border-radius: 10px 0 0 10px;
+  overflow: scroll;
+
+}
+
+/*Personalização da area da classe conteudo, que vai receber <h1>*/
+.Conteudo {
+  border-radius: 10px 0 0 0;
+  display: flex;
+  background: white;
+  height: 120px;
+  width: 500px;
+  border-bottom: 2px solid black;
+}
+
+/*Personalização da barra ul*/
+.links {
+  list-style-type: none;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  width: 150px;
+  height: 300px;
+  padding: 0;
+  background: #BBED2F;
+  border-radius: 15px;
+  margin: 280px 100px;
+}
+
+/*Personalização dos items li*/
+.links li {
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+  margin-top: 27px;
+
+}
+
+/*Personalização dos links*/
+.links li a {
+  font-size: 20px;
+  color: black;
+  display: flex;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+/*Personalização do <h1>*/
+.Conteudo h1 {
+  margin-left: 35px;
+  font-size: 56px;
+}
+
+/*Personalização do conteudo apresentado dentro do section*/
+.texto {
+  margin-left: 35px;
+  margin-right: 35px;
+}
+
+/*Personalização da tag <p> dentro do section*/
+.texto p {
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+}
+
+/*Lista não ordenada dos Hobbies*/
+.hobbies {
+  font-size: 20px;
+  margin-left: 15px;
+}
